@@ -1,7 +1,12 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Since calcualting the inverse of amatrix is costly,
+## These functions create an object that caches the inverse
+## af a given matrix
 
-## Write a short comment describing this function
+## returns a list of 4 fuctions
+## get teh matrix
+## set teh matrix
+## get the inverse, initialized to NULL
+## set the inverse
 
 makeCacheMatrix <- function(x = matrix())
 {
@@ -20,7 +25,9 @@ makeCacheMatrix <- function(x = matrix())
 }
 
 
-## Write a short comment describing this function
+## retrieves teh inverse of the stored matrix
+## if the cahed inverse is null, calculates and
+## atores the inverse of the stored matrix
 
 cacheSolve <- function(x, ...)
 {
